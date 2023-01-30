@@ -1,0 +1,138 @@
+.sidebar {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  border-radius: 10px;
+  height: fit-content; /*take up only as much space as its content requires, rather than a fixed size.*/
+}
+
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar__top > img {
+  margin-bottom: -20px;
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sidebar__top > h2 {
+  font-size: 16px;
+}
+
+.sidebar__top > h4 {
+  font-size: 10px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0.4px;
+  padding: 0 8px;
+}
+
+.sidebar__stats {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.sidebar__stat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__stat > p {
+  color: #777777;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sidebar__statNumber {
+  font-weight: semibold !important;
+  color: #0a66c2 !important;
+}
+
+.sidebar__bookmark {
+  display: flex;
+  align-items: center;
+  color: #5e5e5e;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar__bookmark:hover {
+  color: #121212;
+}
+
+.sidebar__bookmark > * {
+  font-size: 18px !important;
+  margin-right: 7px;
+}
+
+.sidebar__bookmark > p {
+  font-size: 12px !important;
+  font-weight: 600;
+}
+
+.sidebar__recent,
+.sidebar__group {
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.sidebar__recent,
+.sidebar__group {
+  color: #5e5e5e;
+}
+
+.sidebar__group {
+  font-size: 10px;
+}
+
+.sidebar__recent > *,
+.sidebar__group > * {
+  margin-bottom: 8px;
+}
+
+.sidebar__groupIcon {
+  font-size: 17px !important;
+}
+
+.sidebar__recent > h4,
+.sidebar__group > h4 {
+  color: #5e5e5e;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.sidebar__recentItem,
+.sidebar__groupItem {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sidebar__recentItem:hover,
+.sidebar__groupItem:hover {
+  background: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #121212;
+}

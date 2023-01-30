@@ -1,0 +1,107 @@
+.inputModal {
+  position: absolute;
+  height: 100vh;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.inputModal__content {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.inputModal__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputModal__top > h4 {
+  font-weight: 500;
+}
+
+.inputModal__close {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.inputModal__message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.inputModal__textarea {
+  position: relative;
+  margin: 10px 0;
+  overflow: auto;
+}
+
+.inputModal__textarea > input {
+  width: 100%;
+  border: none;
+  min-height: 120px;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  overflow: auto;
+  text-align: start;
+  padding-bottom: 100px;
+}
+
+.inputModal__profileinfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputModal__textarea > input::-webkit-input-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #999;
+}
+
+.inputModal__profileinfo > p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #252525;
+}
+
+.inputModal__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputModal__bottom > .inputModal__options {
+  display: flex;
+  gap: 20px;
+  color: #5e5e5e;
+  cursor: pointer;
+}
+
+.inputModal__bottom > .inputModal__options *:hover {
+  color: #121212;
+}
+
+.inputModal__bottom > .inputModal__button {
+  padding: 7px 20px;
+  border: none;
+  background: #0a66c2;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inputModal__bottom > .inputModal__button:hover {
+  background: #0955a1;
+}

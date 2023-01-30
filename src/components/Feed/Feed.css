@@ -1,0 +1,32 @@
+.feed {
+  flex: 0.6;
+}
+
+.feed__input {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 20px;
+}
+
+.feed__inputPost {
+  display: flex;
+  gap: 10px;
+}
+
+.feed__inputButton {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #777777;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.feed__inputButton:hover {
+  background-color: #ebebeb;
+}
